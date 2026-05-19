@@ -1,0 +1,40 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  width: 100%;
+}
+
+.featureCard {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+  padding: 32px;
+  border-radius: 48px;
+  min-height: 192px;
+  overflow: hidden;
+  position: relative;
+  background-image: var(--card-bg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.dark   { background-color: var(--b-color-object-bg-brand-strong-700, #4c04a4); }
+.medium { background-color: var(--b-color-object-bg-brand-strong-600, #6f1fcc); }
+.light  { background-color: var(--b-color-object-bg-brand-strong-500, #8934f9); }
+
+.featureTitle {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: normal;
+  color: var(--b-color-text-ultimate-white, white);
+}

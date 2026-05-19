@@ -1,0 +1,9 @@
+.container {
+  width: 100%;
+  max-width: var(--layout-content-max);
+  margin-inline: auto;
+
+  @media screen and (max-width: 992px) {
+    padding-inline: var(--spacing-page-x);
+  }
+}

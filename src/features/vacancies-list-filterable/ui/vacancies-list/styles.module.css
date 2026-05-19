@@ -1,0 +1,25 @@
+.card {
+  width: 100%;
+  background: var(--b-color-object-bg-neutral-weak-50, #f4f5fa);
+  border-radius: 24px;
+  padding: 24px;
+}
+
+.newBadge {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--b-color-object-bg-brand-strong-500, #8934f9);
+  background: var(--b-color-object-bg-brand-weak-100, #f3e5ff);
+  border-radius: 8px;
+  padding: 2px 8px;
+  white-space: nowrap;
+}
+
+.chip {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--b-color-text-neutral-strong-900, #2d2e32);
+  background: #e7e8ed;
+  border-radius: 999px;
+  padding: 4px 12px;
+}

@@ -1,0 +1,105 @@
+.container {
+  background: #fff;
+  border-radius: 80px;
+  padding: 72px 0;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  gap: 92px;
+  align-items: flex-start;
+}
+
+.leftSide {
+  width: 356px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+}
+
+.rightSide {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.accordionItem {
+  background: #f4f5fa;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.accordionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
+  cursor: pointer;
+  user-select: none;
+  gap: 16px;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+}
+
+.question { flex: 1; }
+
+.chevron {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8934f9;
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  &.open {
+    transform: rotate(180deg);
+  }
+}
+
+.accordionBody {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+
+.accordionContent {
+  padding: 0 24px 24px;
+}
+
+.decoration {
+  width: 197px;
+  height: auto;
+  margin-top: auto;
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .container {
+    border-radius: 0;
+    padding: 0;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .leftSide { width: 100%; }
+  .decoration { display: none; }
+
+  .accordionHeader {
+    padding: 16px;
+    gap: 8px;
+  }
+
+  .accordionContent {
+    padding: 0 16px 16px;
+  }
+}
