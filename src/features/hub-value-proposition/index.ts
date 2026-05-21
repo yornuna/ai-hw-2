@@ -1,1 +1,0 @@
-export { HubValueProposition } from "./HubValueProposition";

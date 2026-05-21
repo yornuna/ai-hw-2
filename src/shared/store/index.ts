@@ -1,12 +1,9 @@
-import { configureStore, createSlice } from "@reduxjs/toolkit";
+import { configureStore } from "@reduxjs/toolkit";
 
-const appSlice = createSlice({ name: "app", initialState: {}, reducers: {} });
-
-export const makeStore = (): ReturnType<typeof configureStore> =>
+export const makeStore = () =>
   configureStore({
-    reducer: {
-      app: appSlice.reducer,
-    },
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    reducer: (state: Record<string, any> = {}) => state,
   });
 
 export type AppStore = ReturnType<typeof makeStore>;
